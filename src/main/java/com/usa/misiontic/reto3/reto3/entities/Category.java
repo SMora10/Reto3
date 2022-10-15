@@ -22,11 +22,12 @@ public class Category implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
+    private String description;
 
 
     @OneToMany(cascade = {CascadeType.PERSIST},mappedBy = "category")
     @JsonIgnoreProperties("category")
-    private List<Product> products;
+    private List<Bike> bikess;
 
 
     public Integer getId() {
@@ -49,13 +50,27 @@ public class Category implements Serializable{
     }
 
 
-    public List<Product> getProducts() {
-        return products;
+    public String getDescription() {
+        return description;
     }
 
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+
+    public List<Bike> getBikess() {
+        return bikess;
+    }
+
+
+    public void setBikess(List<Bike> bikess) {
+        this.bikess = bikess;
+    }
+
+
+   
     }
     
-}
+

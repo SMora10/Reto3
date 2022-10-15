@@ -9,23 +9,23 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.usa.misiontic.reto3.reto3.entities.Category;
-import com.usa.misiontic.reto3.reto3.service.CategoryService;
+import com.usa.misiontic.reto3.reto3.entities.Bike;
+import com.usa.misiontic.reto3.reto3.service.BikeService;
 
 
 @RestController
-@RequestMapping("/api/Category")
-public class CategoryController {
+@RequestMapping("/api/Bike")
+public class BikeController {
 
     @Autowired
-    private CategoryService categoryService;
+    private BikeService bikeService;
 
     @GetMapping("/all")
-    public List<Category> getAll(){
-        return categoryService.getAll();
+    public List<Bike> getAll(){
+        return bikeService.getAll();
     }
     @PostMapping("/save")
-    public Category save(@RequestBody Category p){
-        return categoryService.save(p);
+    public Bike save(@RequestBody Bike p){
+        return bikeService.save(p);
     }
 }

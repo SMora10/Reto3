@@ -13,7 +13,7 @@ import com.usa.misiontic.reto3.reto3.entities.Product;
 import com.usa.misiontic.reto3.reto3.service.ProductService;
 
 @RestController
-@RequestMapping("/product")
+@RequestMapping("/api/Product")
 public class ProductController {
     
     @Autowired
