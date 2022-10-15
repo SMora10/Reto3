@@ -7,9 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.usa.misiontic.reto3.reto3.entities.Bike;
-import com.usa.misiontic.reto3.reto3.entities.Category;
 import com.usa.misiontic.reto3.reto3.repository.BikeRepository;
-import com.usa.misiontic.reto3.reto3.repository.CategoryRepository;
+
 
 @Service
 public class BikeService {

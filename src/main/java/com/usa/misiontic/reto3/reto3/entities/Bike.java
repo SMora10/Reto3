@@ -1,5 +1,5 @@
 package com.usa.misiontic.reto3.reto3.entities;
-import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
