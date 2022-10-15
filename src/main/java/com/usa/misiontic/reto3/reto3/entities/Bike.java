@@ -22,7 +22,7 @@ public class Bike {
 
     @ManyToOne
     @JoinColumn(name = "CategoryId")
-    @JsonIgnoreProperties("products")
+    @JsonIgnoreProperties("bike")
     private Category category;
 
     public Integer getId() {
@@ -72,5 +72,4 @@ public class Bike {
     public void setCategory(Category category) {
         this.category = category;
     }
-    
 }
